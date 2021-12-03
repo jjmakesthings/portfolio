@@ -51,7 +51,13 @@ h2{
         color:  rgb(102, 102, 102);
     }
 
-#project{
+#center-skills{
+    display:flex;
+    justify-content: center;
+}
+
+
+.section{
     margin: 0 auto;
     margin-top: 20px;
     max-width: 1000px;
@@ -86,16 +92,18 @@ h2{
             justify-content: space-between;
         }
             .project__skills{
-                margin: 20px 0;
+                margin: 16px 0;
             }
                 .project__skill{
                     padding: 6px;
+                    display: inline-block;
                     margin-right: 6px;
+                    margin-bottom: 6px;
                     border: 2px solid orange;
                     border-radius: 4px;
                 }
             .project__links{
-                margin-top:10px;
+                margin-top:20px;
                 display:flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -104,6 +112,7 @@ h2{
                     border: 3px solid rgb(53, 84, 151);
                     padding: 8px;
                     margin-right: 6px;
+                    margin-bottom: 6px;
                     border-radius: 6px;
                     cursor:pointer;
                     background-color: rgb(53, 84, 151);

@@ -15,10 +15,26 @@
     <div id="container">
         <div id="open">
             <div id="open__title">John Shepard</div>
-            <div id="open__description">I am a full stack developer with experience building web and desktop applications using Python and JavaScript. <br>Check out some of my best projects below.</div>
+            <div id="open__description">I am a full stack developer with experience building web and desktop applications. <br>Check out some of my best projects below.</div>
         </div>
-        <div id="project">
-            <h1 class="project__title"><span class="underline-title">Projects</span></h1>
+
+        <div class="section">
+            <h1 class="section__title"><span class="underline-title">Skills</span></h1>
+            <div class="project__skills" id="center-skills">
+                <span class="project__skill">HTML</span>
+                <span class="project__skill">CSS</span>
+                <span class="project__skill">JavaScript</span>
+                <span class="project__skill">Python</span>
+                <span class="project__skill">Django</span>
+                <span class="project__skill">Tkinter</span>
+                <span class="project__skill">Matplotlib</span>
+                <span class="project__skill">Pandas</span>
+                <span class="project__skill">PostgreSQL</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h1 class="section__title"><span class="underline-title">Projects</span></h1>
             <div class="project__container">
                 <div class="project__image">
                     <img src="./images/pool-party.png" alt="pool-party">
@@ -26,7 +42,7 @@
                 <div class="project__content">
                     <div class="project__upper">
                         <h2>Playoff Pool Hosting App</h2>
-                        <p>The <a href="https://playoffpoolparty.com/">Playoff Pool Party</a> web app is a platform where users can create and customize a league with other users.  In a league, users can chat with eachother, submit playoff rankings, and compete for points through the NFL playoffs. <br> This is my most ambitios project to date.</p>    
+                        <p>The <a href="https://playoffpoolparty.com/">Playoff Pool Party</a> web app is a platform where users can create and customize a league with other users.  In a league, users can chat with eachother, submit playoff rankings, and compete for points through the NFL playoffs. <br><br>This is my most ambitios project to date.</p>    
                         <div class="project__skills">
                             <span class="project__skill">Python</span>
                             <span class="project__skill">Django</span>
@@ -45,10 +61,13 @@
             </div>
             
             <div class="project__container">
+                <div class="project__image">
+                    <img src="./images/drop-calc.png" alt="drop-calc">
+                </div>
                 <div class="project__content">
                     <div class="project__upper">
-                        <h2>Spring-Damper Drop Simulator</h2>
-                        <p>or points through the NFL playoffs. <br> This is my most ambitios project to date.</p>    
+                        <h2>Spring-Damper Physics Simulator</h2>
+                        <p>In mechanical engineering, a spring-damper model is often used to analyze shocks and isolators.  These models are described by diferential equations that are best solved with numberical methods.  This desktop application allows a user to slect a type of system and input a number of required and optional variables to solve for motion of a spring-damper system. <br><br>The program accepts test data in .xls format, and allows for saving or loading a serialized .pkl file that describes the state of every input.  After a simulation is run, the data is displayed graphically in a seperate window and may also be exported to a .xls file.</p>    
                         <div class="project__skills">
                             <span class="project__skill">Python</span>
                             <span class="project__skill">Tkinter</span>
@@ -64,6 +83,32 @@
                     </div>
                 </div>
             </div>
+
+            <div class="project__container">
+                <div class="project__image">
+                    <img src="./images/sort-script.png" alt="sort-script">
+                </div>
+                <div class="project__content">
+                    <div class="project__upper">
+                        <h2>Script to engineer and categorize 432 designs</h2>
+                        <p>A script used to design and sort bridge cable dampers for a project that required 432 dampers with unique specifications.  This script loads data into a pandas dataframe, tabulates minimum damper sizing and allows the designer to set different grouping thresholds to optimize for a small number of uniqe designs while minimizing over-engineering.</p>    
+                        <div class="project__skills">
+                            <span class="project__skill">Python</span>
+                            <span class="project__skill">Pandas</span>
+                        </div>
+                    </div>
+                    <div class="project__lower">
+                        <div class="project__links">
+                            <a class="project__button" href="https://colab.research.google.com/drive/1HS5An5hjRZrSRfEUid4dpkX7OxzCcAWc?usp=sharing">Colab Notebook</a>
+                            <a class="project__button more">More Info ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h1 class="section__title"><span class="underline-title">Hobbies</span></h1>
         </div>
     </div>
 
