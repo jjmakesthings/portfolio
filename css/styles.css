@@ -76,12 +76,15 @@ h2{
 }
 
 #open{
+    margin: 0px auto;
     margin-top: 10vh;
+    max-width: 1000px;
 }
     #open__title{
         color:  rgb(58, 97, 180);
         font-size: 3rem;
         font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
     }
 
     #open__description{

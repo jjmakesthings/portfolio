@@ -17,10 +17,3 @@ const navBar = (function(){
     });
     return{};
 }());
-
-
-// const wrapper = document.getElementById("nav-wrap");
-// wrapper.addEventListener("mouseover", (e)=>{
-//     e.target.classlist.add("nav-active");
-//     console.log("class added");
-// });
