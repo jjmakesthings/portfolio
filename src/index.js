@@ -1,4 +1,9 @@
-const navBar = (function () {
+import getSlider from "./slides";
+import drop from "./images/drop-calc.png";
+import pool from "./images/pool-party.png";
+import sort from "./images/sort-script.png";
+
+(function navigationBarSetup() {
   const wrapper = document.getElementById("nav-wrap");
   wrapper.addEventListener("mouseenter", (e) => {
     if (e.target === wrapper) {
@@ -11,8 +16,10 @@ const navBar = (function () {
       e.target.style.transform = "";
     }
   });
-  document.addEventListener("scroll", (e) => {
+  document.addEventListener("scroll", () => {
     wrapper.style.transform = "";
   });
   return {};
 })();
+
+console.log(typeof getSlider);
