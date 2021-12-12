@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -108,22 +109,16 @@ a.anchor {
   box-shadow: 2px 2px 8px rgb(0 0 0 / 60%);
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 .project__image {
   flex: 1;
-  display: none;
   padding: 10px;
+  position: relative;
 }
-
-.project__image img {
-  width: 100%;
-  object-fit: cover;
-}
-
 .project__content {
   flex: 1;
-  min-height: 100%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -178,7 +173,7 @@ a.anchor {
   text-align: center;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 850px) {
   #open {
     margin-top: 20vh;
   }
@@ -191,11 +186,7 @@ a.anchor {
     margin: 80px 0;
     font-size: 1.3rem;
   }
-}
-
-@media (min-width: 900px) {
-  .project__image {
-    flex: 1;
-    display: block;
+  .project__container {
+    flex-direction: row;
   }
 }
