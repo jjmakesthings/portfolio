@@ -1,7 +1,9 @@
-import getSlider from "./slides";
+import carouselModule from "./carouselModule";
 import drop from "./images/drop-calc.png";
 import pool from "./images/pool-party.png";
 import sort from "./images/sort-script.png";
+
+const container = document.getElementById("container");
 
 (function navigationBarSetup() {
   const wrapper = document.getElementById("nav-wrap");
@@ -21,5 +23,7 @@ import sort from "./images/sort-script.png";
   });
   return {};
 })();
+console.log(drop);
 
-console.log(typeof getSlider);
+const carousel = carouselModule.getSlider(drop, pool, sort);
+document.getElementById("pool-party-carousel").appendChild(carousel);

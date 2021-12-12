@@ -1,0 +1,41 @@
+.frame {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  max-width: 400px;
+}
+.frame__slide {
+  min-width: 400px;
+  min-height: 400px;
+}
+.frame__image {
+  object-fit: cover;
+  max-height: 400px;
+  max-width: 400px;
+  display: block;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+.nav__dot {
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px grey solid;
+  margin: 0px 10px;
+  background-color: none;
+}
+.nav__dot:hover {
+  cursor: pointer;
+}
+.dot-active {
+  background-color: grey;
+}
