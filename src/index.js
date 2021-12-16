@@ -1,7 +1,14 @@
-import getSlider from "./slides";
-import drop from "./images/drop-calc.png";
-import pool from "./images/pool-party.png";
-import sort from "./images/sort-script.png";
+import carouselModule from "./carouselModule";
+import dropCalcDash from "./images/drop-calc-dash.png";
+import dropCalcRun from "./images/drop-calc-run.png";
+import poolDash from "./images/pool-dash.png";
+import poolCreate from "./images/pool-create.png";
+import poolManage from "./images/pool-manage.png";
+import poolChat from "./images/pool-chat.png";
+import poolRank from "./images/pool-rank.png";
+import sortScript from "./images/sort-script.png";
+
+const container = document.getElementById("container");
 
 (function navigationBarSetup() {
   const wrapper = document.getElementById("nav-wrap");
@@ -22,4 +29,14 @@ import sort from "./images/sort-script.png";
   return {};
 })();
 
-console.log(typeof getSlider);
+const poolCarousel = carouselModule.getSlider(
+  poolDash,
+  poolCreate,
+  poolManage,
+  poolChat,
+  poolRank
+);
+document.getElementById("pool-carousel").appendChild(poolCarousel);
+
+const dropCalcCarousel = carouselModule.getSlider(dropCalcDash, dropCalcRun);
+document.getElementById("drop-calc-carousel").appendChild(dropCalcCarousel);
