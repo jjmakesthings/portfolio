@@ -32,7 +32,15 @@ const carouselModule = (function () {
           element.classList.remove("dot-active");
         });
         e.target.classList.add("dot-active");
-        frame.scrollLeft = 400 * e.target["data-target"];
+        let imageWidth = function () {
+          let widthString = getComputedStyle(
+            e.target.parentElement.parentElement.querySelector(".frame")
+          ).width;
+          let widthValue = widthString.slice(0, -2);
+          return widthValue;
+        };
+        frame.scrollLeft = imageWidth(e) * e.target["data-target"];
+        resetTimer();
       });
       nav.appendChild(dot);
     }
@@ -50,9 +58,10 @@ const carouselModule = (function () {
       nextElem.click();
     });
   };
-  const interval = setInterval(() => scroll(), 5000);
+  let interval = setInterval(() => scroll(), 5000);
   const resetTimer = function () {
-    this.interval = setInterval(() => scroll(), 5000);
+    clearInterval(interval);
+    interval = setInterval(() => scroll(), 5000);
   };
   return { getSlider, resetTimer };
 })();
