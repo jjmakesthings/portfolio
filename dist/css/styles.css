@@ -95,7 +95,14 @@ a.anchor {
   font-weight: 400;
   text-align: center;
 }
-
+.link {
+  text-decoration: none;
+  color: rgb(53, 84, 151);
+}
+.link:hover,
+.link:active {
+  text-decoration: underline;
+}
 .section {
   margin: 0 auto;
   margin-top: 20px;
@@ -149,6 +156,7 @@ a.anchor {
   cursor: pointer;
   background-color: rgb(58, 97, 180);
   color: white;
+  text-decoration: none;
 }
 .project__button.more {
   border: 3px solid rgb(77, 115, 199);
@@ -157,16 +165,18 @@ a.anchor {
 }
 .project__button:hover,
 .project__button:active {
-  background-color: rgb(77, 115, 199);
-  border-color: rgb(77, 115, 199);
+  background-color: rgb(86, 126, 214);
+  border-color: rgb(86, 126, 214);
   color: white;
 }
 #contact-wrap {
-  margin: 100px auto;
-  margin-bottom: 140px;
+  margin: 160px 10px;
+  margin-bottom: 180px;
   text-align: center;
 }
-
+#contact-wrap .link {
+  font-size: 1.1rem;
+}
 #footer {
   margin: 40px auto;
   text-align: center;
@@ -178,10 +188,12 @@ a.anchor {
   }
   #open__description {
     margin: 40px 0px;
-    text-align: left;
   }
   .project__container {
     border-radius: 8px;
+  }
+  #contact-wrap .link {
+    font-size: 1.3rem;
   }
 }
 
@@ -189,11 +201,9 @@ a.anchor {
   #open {
     margin-top: 20vh;
   }
-
   #open__title {
     font-size: 4.5rem;
   }
-
   #open__description {
     margin: 80px 0;
     font-size: 1.3rem;
