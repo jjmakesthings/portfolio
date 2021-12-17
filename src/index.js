@@ -9,7 +9,14 @@ import poolRank from "./images/pool-rank.png";
 import poolLeague from "./images/pool-league.png";
 import carouselCode from "./images/carousel-code.png";
 import sortScript from "./images/sort-script.png";
+import shopBlocks from "./images/shop-blocks.jpeg";
+import shopBlocksAssy from "./images/shop-blocks-assy.jpeg";
+import shopBox from "./images/shop-box.jpeg";
+import shopCube from "./images/shop-cube.jpeg";
+import shopHalves from "./images/shop-halves.jpeg";
+import shopShield from "./images/shop-shield.jpeg";
 
+// Add image carousels to page
 const poolCarousel = carouselModule.getSlider(
   poolDash,
   poolLeague,
@@ -23,6 +30,17 @@ document.getElementById("pool-carousel").appendChild(poolCarousel);
 const dropCalcCarousel = carouselModule.getSlider(dropCalcDash, dropCalcRun);
 document.getElementById("drop-calc-carousel").appendChild(dropCalcCarousel);
 
+const shopCarousel = carouselModule.getSlider(
+  shopShield,
+  shopBlocks,
+  shopBlocksAssy,
+  shopBox,
+  shopCube,
+  shopHalves
+);
+document.getElementById("hobby-cnc-carousel").appendChild(shopCarousel);
+
+// Add static images to page
 const sortScriptImage = document.createElement("img");
 sortScriptImage.src = sortScript;
 sortScriptImage.classList.add("one-image");
@@ -35,8 +53,7 @@ document
   .getElementById("portfolio-site-carousel")
   .appendChild(carouselCodeImage);
 
-const container = document.getElementById("container");
-
+// Nav bar code
 (function navigationBarSetup() {
   const wrapper = document.getElementById("nav-wrap");
   wrapper.addEventListener("mouseenter", (e) => {
