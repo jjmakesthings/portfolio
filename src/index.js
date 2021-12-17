@@ -6,7 +6,34 @@ import poolCreate from "./images/pool-create.png";
 import poolManage from "./images/pool-manage.png";
 import poolChat from "./images/pool-chat.png";
 import poolRank from "./images/pool-rank.png";
+import poolLeague from "./images/pool-league.png";
+import carouselCode from "./images/carousel-code.png";
 import sortScript from "./images/sort-script.png";
+
+const poolCarousel = carouselModule.getSlider(
+  poolDash,
+  poolLeague,
+  poolChat,
+  poolCreate,
+  poolManage,
+  poolRank
+);
+document.getElementById("pool-carousel").appendChild(poolCarousel);
+
+const dropCalcCarousel = carouselModule.getSlider(dropCalcDash, dropCalcRun);
+document.getElementById("drop-calc-carousel").appendChild(dropCalcCarousel);
+
+const sortScriptImage = document.createElement("img");
+sortScriptImage.src = sortScript;
+sortScriptImage.classList.add("one-image");
+document.getElementById("sort-script-carousel").appendChild(sortScriptImage);
+
+const carouselCodeImage = document.createElement("img");
+carouselCodeImage.src = carouselCode;
+carouselCodeImage.classList.add("one-image");
+document
+  .getElementById("portfolio-site-carousel")
+  .appendChild(carouselCodeImage);
 
 const container = document.getElementById("container");
 
@@ -28,15 +55,3 @@ const container = document.getElementById("container");
   });
   return {};
 })();
-
-const poolCarousel = carouselModule.getSlider(
-  poolDash,
-  poolCreate,
-  poolManage,
-  poolChat,
-  poolRank
-);
-document.getElementById("pool-carousel").appendChild(poolCarousel);
-
-const dropCalcCarousel = carouselModule.getSlider(dropCalcDash, dropCalcRun);
-document.getElementById("drop-calc-carousel").appendChild(dropCalcCarousel);

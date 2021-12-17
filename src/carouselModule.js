@@ -58,10 +58,10 @@ const carouselModule = (function () {
       nextElem.click();
     });
   };
-  let interval = setInterval(() => scroll(), 5000);
+  let interval = setInterval(() => scroll(), 9000);
   const resetTimer = function () {
     clearInterval(interval);
-    interval = setInterval(() => scroll(), 5000);
+    interval = setInterval(() => scroll(), 9000);
   };
   return { getSlider, resetTimer };
 })();
