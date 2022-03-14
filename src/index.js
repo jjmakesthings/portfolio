@@ -1,4 +1,5 @@
 import carouselModule from "./carouselModule";
+import cvForm from "./images/cv-form.png";
 import dropCalcDash from "./images/drop-calc-dash.png";
 import dropCalcRun from "./images/drop-calc-run.png";
 import poolDash from "./images/pool-dash.png";
@@ -41,6 +42,11 @@ const shopCarousel = carouselModule.getSlider(
 document.getElementById("hobby-cnc-carousel").appendChild(shopCarousel);
 
 // Add static images to page
+const cvImage = document.createElement("img");
+cvImage.src = cvForm;
+cvImage.classList.add("one-image");
+document.getElementById("cv-site-carousel").appendChild(cvImage);
+
 const sortScriptImage = document.createElement("img");
 sortScriptImage.src = sortScript;
 sortScriptImage.classList.add("one-image");
