@@ -47,11 +47,6 @@ cvImage.src = cvForm;
 cvImage.classList.add("one-image");
 document.getElementById("cv-site-carousel").appendChild(cvImage);
 
-const sortScriptImage = document.createElement("img");
-sortScriptImage.src = sortScript;
-sortScriptImage.classList.add("one-image");
-document.getElementById("sort-script-carousel").appendChild(sortScriptImage);
-
 const carouselCodeImage = document.createElement("img");
 carouselCodeImage.src = carouselCode;
 carouselCodeImage.classList.add("one-image");
